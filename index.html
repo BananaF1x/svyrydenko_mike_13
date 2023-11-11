@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hlegal</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="wrapper-hlegal">
@@ -40,18 +41,7 @@
         
                     <!-- header-logo -->
                     <div class="header-logo">
-                        <div class="logo-wrapp">
-                            <img class="logo" src="imgs/logo.svg" alt="hlegal">
-                        </div>
-                        <div class="logo-wrapp">
-                            <img class="add-for-logo" src="imgs/law company.svg" alt="law company">
-                        </div>
-                        <div class="for-mobile">
-                            <div class="slash-wrapp">
-                                <img class="slash" src="imgs/slash.svg" alt="Slash">
-                            </div>
-                            <a class="for-mobile-link" href="#">services</a>
-                        </div>
+                        <img class="header-logo__img" src="imgs/logo.svg" alt="hlegal">
                     </div>
         
                     <!-- header-menu -->
@@ -79,19 +69,28 @@
                 <!-- main-title -->
                 <div class="main-title">
                     <h1 class="primary-title">you legal solutions provider</h1>
-                    <button>
+                    <a href="#" class="btn">
                         <img class="scroll" src="imgs/scroll.svg" alt="arrow">
-                    </button>
+                        <img class="scroll-hover" src="imgs/scroll-hover.svg" alt="arrow">
+                    </a>
                 </div>
             </div>
             <!-- oriented -->
             <div class="oriented">
-                <div class="oriented__container">
-                    <button class="oriented__btn">Consistent</button>
-                    <button class="oriented__btn">Customer oriented</button>
-                    <button class="oriented__btn">Innovative</button>
-                    <button class="oriented__btn">Business oriented</button>
-                </div>
+                <ul class="oriented__nav">
+                    <li class="oriented__list">
+                        <a class="oriented__link" href="#">Consistent</a>
+                    </li>
+                    <li class="oriented__list">
+                        <a class="oriented__link" href="#">Customer oriented</a>
+                    </li>
+                    <li class="oriented__list">
+                        <a class="oriented__link" href="#">Innovative</a>
+                    </li>
+                    <li class="oriented__list">
+                        <a class="oriented__link" href="#">Business oriented</a>
+                    </li>
+                </ul>
                 <div class="oriented__container">
                     <h2 class="oriented__title title">We turn the idea of legal services</h2>
                     <p class="oriented__text">
@@ -130,7 +129,7 @@
                     </div>
                     <div class="services-container__block">
                         <div class="services-container__img">
-                            <img class="services-container__icon" src="imgs/icon-3.svg" alt="icon">
+                            <img class="services-container__icon" src="imgs/icon-3.1.png" alt="icon">
                         </div>
                         <h3 class="services-container__title">Structuring corporate relationships</h3>
                         <p class="services-container__text">
@@ -168,11 +167,17 @@
             </div>
         </div>
 
+        <!-- after-services -->
+        <div class="after-services">
+            <div class="after"></div>
+            <div class="after after--small"></div>
+        </div>
+
         <!-- team -->
         <div class="team">
             <div class="team__tabs">
                 <div class="team__img-container">
-                    <img class="team__picture" src="imgs/photo.png" alt="photo">
+                    <img class="team__picture" src="imgs/photo-team.png" alt="photo">
                 </div>
                 <div class="team__text-container">
                     <a class="arrow-link" href="#">команда
@@ -181,8 +186,8 @@
                     <p class="team__primary-text">
                         Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
                     </p>
-                    <span class="team__primary-text team__primary-text--spec">Олександр Олександровський</span>
-                    <span class="team__primary-text team__primary-text--mod">Керуючий партнер</span>
+                    <span class="team__primary-text--spec">Олександр Олександровський</span>
+                    <span class="team__primary-text--mod">Керуючий партнер</span>
                 </div>
             </div>
             <div class="team__links-container">
@@ -202,40 +207,40 @@
         <div class="clients">
             <h3 class="clients__title">They already trust us</h3>
             <div class="clients__wprapp">
-                <div class="clients__item">
+                <div class="clients__item clients__item--blue">
                     <img class="clients__img" src="imgs/logo-1.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--dark">
                     <img class="clients__img" src="imgs/logo-2.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--gradient-orange">
                     <img class="clients__img" src="imgs/logo-3.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--purpur">
                     <img class="clients__img" src="imgs/logo-4.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--orange">
                     <img class="clients__img" src="imgs/logo-5.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--gray">
                     <img class="clients__img" src="imgs/logo-6.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--red">
                     <img class="clients__img" src="imgs/logo-7.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--white">
                     <img class="clients__img" src="imgs/logo-8.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--bisquit">
                     <img class="clients__img" src="imgs/logo-9.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--dark-purpur">
                     <img class="clients__img" src="imgs/logo-10.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--dark-blue">
                     <img class="clients__img" src="imgs/logo-11.png" alt="company logo">
                 </div>
-                <div class="clients__item">
+                <div class="clients__item clients__item--black">
                     <img class="clients__img" src="imgs/logo-12.png" alt="company logo">
                 </div>
             </div>
@@ -253,27 +258,48 @@
                 <div class="publication__item">
                     <div class="publication__img-wrapp">
                         <img class="publication__img" src="imgs/picture-1.png" alt="picture">
-                        <h3 class="publication__sub-title">Equity associate</h3>
-                        <span class="publication__date">April 22</span>
-                        <p class="publication__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                     </div>
+                    <h3 class="publication__sub-title">Equity associate</h3>
+                    <span class="publication__date">April 22</span>
+                    <p class="publication__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                 </div>
                 <div class="publication__item">
                     <div class="publication__img-wrapp">
                         <img class="publication__img" src="imgs/picture-2.png" alt="picture">
-                        <h3 class="publication__sub-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3>
-                        <span class="publication__date">September 29</span>
-                        <p class="publication__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                     </div>
+                    <h3 class="publication__sub-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3>
+                    <span class="publication__date">September 29</span>
+                    <p class="publication__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                 </div>
                 <div class="publication__item">
                     <div class="publication__img-wrapp">
                         <img class="publication__img" src="imgs/picture-3.png" alt="picture">
-                        <h3 class="publication__sub-title">Millennial Testament</h3>
-                        <span class="publication__date">August 19</span>
-                        <p class="publication__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                     </div>
+                    <h3 class="publication__sub-title">Millennial Testament</h3>
+                    <span class="publication__date">August 19</span>
+                    <p class="publication__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                 </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-adress">
+                <a class="address-link" href="#">Kyiv, Mechnikova str, 14/1</a>
+                <img class="point" src="imgs/point.svg" alt="point">
+                <a href="#" class="footer-adress__map">On map</a>
+            </div>
+            <div class="footer-contacts">
+                <a class="facebook-link" href="#">
+                    <img src="imgs/facebook-icon.png" alt="facebook">
+                </a>
+                <img class="point" src="imgs/point.svg" alt="point">
+                <a class="phone-number" href="#">0800 211 927</a>
+                <img class="point" src="imgs/point.svg" alt="point">
+                <a class="footer-email" href="#">contact@forstudy.space</a>
+            </div>
+            <div class="footer-item">
+                <span class="footer-item__text">© 2021 HLEGAL Law company, LLC</span>
             </div>
         </div>
     </div>

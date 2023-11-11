@@ -1,0 +1,9 @@
+@media screen and (min-width: 375px) {
+    .header-logo {
+        max-width: 375px;
+        padding: 15px 0 10px 15px;
+        .header-logo__img {
+            display: block;
+        }
+    }
+}

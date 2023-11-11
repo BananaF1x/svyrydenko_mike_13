@@ -1,0 +1,33 @@
+@media screen and (min-width: 375px) {
+    .main-title {
+        max-width: 375px;
+        .primary-title {
+            max-width: 315px;
+            margin: 0 auto;
+            padding: 129px 0 159px;
+            text-align: center;
+            font-size: 2.375rem;
+            font-weight: 700;
+        }
+        .btn {
+            padding-bottom: 30px;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            .scroll {
+                opacity: 1;
+                display: block;
+            }
+            .scroll-hover {
+                opacity: 1;
+                display: none;
+            }
+            &:hover .scroll-hover {
+                display: block;
+            }
+            &:hover .scroll {
+                display: none;
+            }
+        }
+    }
+}

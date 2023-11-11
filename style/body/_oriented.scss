@@ -1,0 +1,38 @@
+@media screen and (min-width: 375px) {
+    .oriented {
+        max-width: 375px;
+        padding: 60px;
+        .oriented__nav {
+            display: flex;
+            gap: 0 30px;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.30);
+            padding-bottom: 30px;
+            overflow-x: auto;
+            .oriented__list {
+                .oriented__link {
+                    font-size: 1.875rem;
+                    font-weight: 700;
+                    color: #B3B3BA;
+                    white-space: nowrap;
+                    &:hover {
+                        background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+        .oriented__container {
+            .oriented__title {
+                padding: 30px 0;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+            .oriented__text {
+                font-size: 1.1875rem;
+                line-height: 30px;
+            }
+        }
+    }
+}
