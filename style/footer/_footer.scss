@@ -1,11 +1,8 @@
 @media screen and (min-width: 375px) {
     .footer {
         background: #F5F5FA;
-        max-width: 375px;
         padding: 30px;
         .footer-adress {
-            padding-top: 30px;
-            border-top: 2px solid #E6E6F0;
             .address-link {
                 display: block;
                 color: #323264;
@@ -58,6 +55,57 @@
                 text-align: center;
                 color: #B3B3BA;
             }
+        }
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 30px;
+            border-top: 2px solid #E6E6F0;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 60px;
+        .footer-adress {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+            .point {
+                display: block;
+                width: 6px;
+            }
+            .footer-adress__map {
+                padding: 0;
+            }
+        }
+        .footer-contacts {
+            display: flex;
+            align-items: center;
+            order: 1;
+            gap: 0 10px;
+            padding-top: 21px;
+            .facebook-link {
+                img {
+                    display: block;
+                    width: 38px;
+                }
+            }
+            .point {
+                display: block;
+                width: 6px;
+            }
+            .phone-number {
+                padding: 0;
+                
+            }
+        }
+        .footer-item {
+            padding-top: 0;
         }
     }
 }

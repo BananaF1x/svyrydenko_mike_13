@@ -1,6 +1,5 @@
 @media screen and (min-width: 375px) {
     .clients {
-        max-width: 375px;
         .clients__title {
             padding: 60px 0 30px;
             font-weight: 700;
@@ -36,23 +35,78 @@
             }
             .clients__item--red {
                 display: none;
+                background: #C71C36;
             }
             .clients__item--white {
                 display: none;
+                background: #DCF3F9;
             }
             .clients__item--bisquit {
                 display: none;
+                background: #EAEAEA;
             }
             .clients__item--dark-purpur {
                 display: none;
+                background: #282240;
             }
             .clients__item--dark-blue {
                 display: none;
+                background: #1D4568;
             }
             .clients__item--black {
                 display: none;
+                background: #000;
             }
         }
         
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clients {
+        .clients__wprapp {
+            display: flex;
+            flex-wrap: wrap;
+            .clients__item {
+                width: calc(100% / 3);
+                display: flex;
+            }
+            .clients__item--blue {
+                background: #1C4280;
+            }
+            .clients__item--dark {
+                background: #143646;
+            }
+            .clients__item--gradient-orange {
+                background: #F48B30;
+            }
+            .clients__item--purpur {
+                background: #9E4DC3;
+            }
+            .clients__item--orange {
+                background: #FD9339;
+            }
+            .clients__item--gray {
+                background: #E2E2E4;
+            }
+            .clients__item--red {
+                background: #C71C36;
+            }
+            .clients__item--white {
+                background: #DCF3F9;
+            }
+            .clients__item--bisquit {
+                background: #EAEAEA;
+            }
+            .clients__item--dark-purpur {
+                background: #282240;
+            }
+            .clients__item--dark-blue {
+                background: #1D4568;
+            }
+            .clients__item--black {
+                background: #000;
+            }
+        }
     }
 }

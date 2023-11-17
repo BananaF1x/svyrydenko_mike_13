@@ -1,6 +1,6 @@
 @media screen and (min-width: 375px) {
     .header-contacts {
-        max-width: 375px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -8,14 +8,15 @@
         background: rgba(245, 245, 250, 0.20);
         .language-selection {
             display: flex;
-            gap: 0 7px;
+            align-items: center;
             .language-selection__list {
-                padding: 5px 7px;
-
                 .language-selection__link {
+                    display: block;
                     letter-spacing: 1px;
                     font-weight: 700;
                     color: white;
+                    font-size: 0.75rem;
+                    padding: 5px 7px;
                 }
                 &:nth-last-child(1) {
                     border-radius: 8px;
@@ -32,7 +33,6 @@
             }
             .phone-number {
                 font-weight: 700;
-                font-size: 1rem;
                 color: white;
             }
             .facebook-link {
@@ -40,4 +40,35 @@
             }
         }
     }    
+}
+@media screen and (min-width: 768px) {
+    .header-contacts {
+        justify-content: flex-start;
+        background: none;
+        padding: 0;
+        .language-selection {
+            display: flex;
+            align-items: center;
+        }
+        .contacts-wrapp {
+            display: flex;
+            align-items: center;
+            gap: 0 6px;
+            padding-left: 6px;
+            .point {
+                display: block;
+            }
+            .address-link {
+                display: block;
+                color: #B3B3BA;
+            }
+            .phone-number {
+                font-weight: 700;
+                color: white;
+            }
+            .facebook-link {
+                display: block;
+            }
+        }
+    } 
 }

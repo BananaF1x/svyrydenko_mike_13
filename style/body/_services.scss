@@ -1,11 +1,9 @@
 @media screen and (min-width: 375px) {
     .services {
-        max-width: 375px;
         padding: 0 30px;
         .services-wrapp {
-          
             .title {
-                padding:10px 0 30px;
+                padding-top:10px;
                 font-size: 1.875rem;
                 font-weight: 700;
                 background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
@@ -15,7 +13,9 @@
             }
         }
         .services-container {
+            display: block;
             .services-container__block {
+                padding-top: 30px;
                 .services-container__img {
                     display: flex;
                     justify-content: center;
@@ -32,9 +32,23 @@
                     color: #24A3FF;
                 }
                 .services-container__text {
-                    padding: 15px 0 30px;
+                    padding-top: 15px;
                     line-height: 26px;
                 }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .services {
+        padding: 60px;
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 60px;
+            .services-container__block {
+                padding-top: 60px;
+                width: calc((100% - 60px) / 2);
             }
         }
     }

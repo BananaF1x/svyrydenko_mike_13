@@ -1,6 +1,5 @@
 @media screen and (min-width: 375px) {
     .publications {
-        max-width: 375px;
         padding: 30px;
         background: #F5F5FA;
         .publication__container {
@@ -8,7 +7,7 @@
                 padding-top: 5px;
                 font-weight: 700;
                 font-size: 1.875rem;
-                background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+                background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -47,6 +46,40 @@
                     font-size: 0.875rem;
                     line-height: 22px;
                     color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .publications {
+        padding: 30px 60px;
+        .publication__container {
+            .publication__title {
+                padding-top: 10px;
+                font-size: 2.375rem;
+            }
+        }
+        .publication__container--flex {
+            width: 100%;
+            padding-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 30px;
+            .publication__item {
+                width: calc((100% - 30px) / 2);
+                margin-top: 0;
+                .publication__img-wrapp {
+                    .publication__img {
+                        height: 200px;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-last-child(1) {
+                    width: 100%;
+                    margin-top: 30px;
                 }
             }
         }

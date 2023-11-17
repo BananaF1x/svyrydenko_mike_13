@@ -1,0 +1,30 @@
+@media screen and (min-width: 375px) {
+    .header-menu {
+        display: none;
+        .menu {
+            .menu__list {
+                .menu__link {
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .header-menu {
+        width: 100%;
+        display: block;
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 0 15px;
+            .menu__list {
+                .menu__link {
+                    display: block;
+                    font-weight: 700;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

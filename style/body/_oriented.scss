@@ -1,6 +1,5 @@
 @media screen and (min-width: 375px) {
     .oriented {
-        max-width: 375px;
         padding: 60px;
         .oriented__nav {
             display: flex;
@@ -22,6 +21,9 @@
                     }
                 }
             }
+            &::-webkit-scrollbar {
+                display: none;
+          }
         }
         .oriented__container {
             .oriented__title {
@@ -29,7 +31,7 @@
                 font-size: 1.25rem;
                 font-weight: 700;
             }
-            .oriented__text {
+            .oriented__text { 
                 font-size: 1.1875rem;
                 line-height: 30px;
             }

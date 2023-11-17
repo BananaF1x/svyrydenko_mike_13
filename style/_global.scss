@@ -24,40 +24,55 @@ html {
 
 
 .main-bc {
-	max-width: 375px;
 	background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 	border-radius: 0px 0px 12px 12px;
 }
 
+.symbol {
+	background: url(../imgs/symbol.png) no-repeat center;
+	background-size: auto 100%;
+}
+
 .after-services {
-	max-width: 375px;
 	.after {
 		margin: 0 auto;
-		max-width: 335px;
+		width: 98%;
 		height: 10px;
 		background: #CACADB;
 		border-radius: 0 0 12px 12px;
 	}
 	.after--small {
-		max-width: 295px;
+		max-width: 96%;
 		background: #E7E7F2;
 	}
 }
 
-.symbol {
-	max-width: 375px;
-	background: url(../imgs/symbol.png) no-repeat center;
-}
-
-.arrow-link {
-	display: flex;
-	align-items: center;
-	gap: 2px;
-	font-size: 0.875rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #24A3FF;
-	.arrow-link__img {
-		display: block;
+@media screen and (min-width: 375px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
 	}
+	
+	.arrow-link {
+		display: flex;
+		align-items: center;
+		gap: 2px;
+		font-size: 0.875rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #24A3FF;
+		.arrow-link__img {
+			display: block;
+		}
+	}
+}
+@media screen and (min-width: 648px) {
+	.header {
+		padding: 50px 60px 0;
+	}
+}
+.wrapper-hlegal {
+	max-width: 768px;
 }
