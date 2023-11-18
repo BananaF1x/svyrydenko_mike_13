@@ -1,3 +1,4 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .footer {
         background: #F5F5FA;
@@ -65,6 +66,8 @@
         }
     }
 }
+
+// media 1024px
 @media screen and (min-width: 768px) {
     .footer {
         display: flex;
@@ -107,5 +110,12 @@
         .footer-item {
             padding-top: 0;
         }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding: 0 60px 30px;
     }
 }

@@ -1,23 +1,8 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .header-menu {
         display: none;
         .menu {
-            .menu__list {
-                .menu__link {
-                    
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 768px) {
-    .header-menu {
-        width: 100%;
-        display: block;
-        .menu {
-            display: flex;
-            align-items: center;
-            gap: 0 15px;
             .menu__list {
                 .menu__link {
                     display: block;
@@ -26,5 +11,25 @@
                 }
             }
         }
+    }
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .header-menu {
+        width: 100%;
+        display: flex;
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 0 15px;
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .header-menu {
+        justify-content: flex-end;
     }
 }

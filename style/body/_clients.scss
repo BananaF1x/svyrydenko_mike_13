@@ -1,3 +1,4 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .clients {
         .clients__title {
@@ -62,6 +63,7 @@
     }
 }
 
+// media 768px
 @media screen and (min-width: 768px) {
     .clients {
         .clients__wprapp {
@@ -70,42 +72,20 @@
             .clients__item {
                 width: calc(100% / 3);
                 display: flex;
-            }
-            .clients__item--blue {
-                background: #1C4280;
-            }
-            .clients__item--dark {
-                background: #143646;
-            }
-            .clients__item--gradient-orange {
-                background: #F48B30;
-            }
-            .clients__item--purpur {
-                background: #9E4DC3;
-            }
-            .clients__item--orange {
-                background: #FD9339;
-            }
-            .clients__item--gray {
-                background: #E2E2E4;
-            }
-            .clients__item--red {
-                background: #C71C36;
-            }
-            .clients__item--white {
-                background: #DCF3F9;
-            }
-            .clients__item--bisquit {
-                background: #EAEAEA;
-            }
-            .clients__item--dark-purpur {
-                background: #282240;
-            }
-            .clients__item--dark-blue {
-                background: #1D4568;
-            }
-            .clients__item--black {
-                background: #000;
+            }    
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .clients {
+        .clients__title {
+            padding: 0 0 30px;
+        }
+        .clients__wprapp {
+            .clients__item {
+                width: calc(100% / 4);
             }
         }
     }

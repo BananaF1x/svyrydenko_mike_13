@@ -1,3 +1,4 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .header-logo {
         width: fit-content;
@@ -11,13 +12,20 @@
         }
     }
 }
+
+// media 768px
 @media screen and (min-width: 768px) {
     .header-logo {
-        width: fit-content;
         padding: 30px 0;
         .header-logo__img {
-            display: block;
             width: 130px;
         }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .header-logo {
+        position: absolute;
     }
 }

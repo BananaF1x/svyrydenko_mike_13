@@ -1,3 +1,4 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .publications {
         padding: 30px;
@@ -19,6 +20,7 @@
                 background: #fff;
                 .publication__img-wrapp {
                     .publication__img {
+                        border-radius: 8px 8px 0 0;
                         display: block;
                         width: 100%;
                     }
@@ -52,6 +54,7 @@
     }
 }
 
+// media 768px
 @media screen and (min-width: 768px) {
     .publications {
         padding: 30px 60px;
@@ -80,6 +83,22 @@
                 &:nth-last-child(1) {
                     width: 100%;
                     margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .publications {
+        padding: 30px 60px;
+        .publication__container--flex {
+            .publication__item {
+                width: calc((100% - 60px) / 3);
+                &:nth-last-child(1) {
+                    width: calc((100% - 60px) / 3);
+                    margin-top: 0;
                 }
             }
         }

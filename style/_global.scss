@@ -47,6 +47,20 @@ html {
 	}
 }
 
+.arrow-link {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #24A3FF;
+	.arrow-link__img {
+		display: block;
+	}
+}
+
+// media 375px
 @media screen and (min-width: 375px) {
 	.header {
 		display: flex;
@@ -54,25 +68,21 @@ html {
 		align-items: center;
 		flex-wrap: wrap;
 	}
-	
-	.arrow-link {
-		display: flex;
-		align-items: center;
-		gap: 2px;
-		font-size: 0.875rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: #24A3FF;
-		.arrow-link__img {
-			display: block;
-		}
-	}
 }
-@media screen and (min-width: 648px) {
+
+// media 768px
+@media screen and (min-width: 768px) {
 	.header {
 		padding: 50px 60px 0;
 	}
 }
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+	.header {
+		position: relative;
+	}
+}
 .wrapper-hlegal {
-	max-width: 768px;
+	max-width: 1024px;
 }

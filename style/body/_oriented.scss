@@ -1,6 +1,7 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .oriented {
-        padding: 60px;
+        padding: 30px;
         .oriented__nav {
             display: flex;
             gap: 0 30px;
@@ -34,6 +35,52 @@
             .oriented__text { 
                 font-size: 1.1875rem;
                 line-height: 30px;
+            }
+        }
+    }
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .oriented {
+        padding: 60px;
+        .oriented__nav {
+            padding-bottom: 60px;
+            .oriented__list {
+                .oriented__link {
+                    font-size: 2.375rem;
+                }
+            }
+        }
+        .oriented__container {
+            .oriented__title {
+                padding: 60px 0 30px;
+                font-size: 1.875rem;
+            }
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .oriented {
+        display: flex;
+        padding: 60px;
+        .oriented__nav {
+            width: 49%;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+            padding-right: 60px;
+            border-right: 4px solid rgba(255, 255, 255, 0.30);
+        }
+        .oriented__container {
+            width: 51%;
+            padding-left: 60px;
+            .oriented__title {
+                padding: 0 0 30px;
             }
         }
     }

@@ -1,3 +1,4 @@
+// media 375px
 @media screen and (min-width: 375px) {
     .team {
         padding: 0 30px;
@@ -15,11 +16,6 @@
                 padding: 30px 30px 0;
                 background-color: #F5F5FA;
                 border-radius: 0 0 12px 12px;
-                .arrow-link {
-                    .arrow-link__img {
-    
-                    }
-                }
                 .team__primary-text {
                     padding-top: 5px;
                     font-size: 1.875rem;
@@ -61,53 +57,39 @@
     }
 }
 
+// media 768px
 @media screen and (min-width: 768px) {
     .team {
+        padding: 60px;
         .team__tabs {
-            .team__img-container {
-                padding-top: 30px;
-            }
             .team__text-container {
-                padding: 30px 30px 0;
-                background-color: #F5F5FA;
-                border-radius: 0 0 12px 12px;
-                .arrow-link {
-                    .arrow-link__img {
-    
-                    }
-                }
                 .team__primary-text {
-                    padding-top: 5px;
-                    font-size: 1.875rem;
-                    font-weight: 700;
-                    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-                .team__primary-text--spec {
-                    display: block;
-                    padding-top: 30px;
-                    font-weight: 700;
-                    color: #B3B3BA;
-                }
-                .team__primary-text--mod {
-                    display: block;
-                    padding: 6px 0 30px;
-                    font-size: 0.875rem;
-                    line-height: 22px;
-                    color: #B3B3BA;
+                    font-size: 2.375rem;
                 }
             }
         }
-        .team__links-container {
-            padding-top: 30px;
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .team {
+        .team__tabs {
             display: flex;
-            justify-content: center;
-            gap: 0 15px;
-            .team__link {
-                .team__links-point {
-                    display: block;
+            .team__img-container {
+                width: 45%;
+                padding-top: 0;
+                .team__picture {
+                    border-radius: 12px 0 0 12px;
+                    height: 100%;
+                }
+            }
+            .team__text-container {
+                border-radius: 0 12px 12px 0;
+                width: 55%;
+                padding: 30px;
+                .team__primary-text--mod {
+                    padding: 6px 0 0;
                 }
             }
         }
