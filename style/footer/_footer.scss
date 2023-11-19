@@ -67,14 +67,16 @@
     }
 }
 
-// media 1024px
+// media 768px
 @media screen and (min-width: 768px) {
     .footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         padding: 30px 60px;
         .footer-adress {
+            width: 50%;
             display: flex;
             align-items: center;
             gap: 0 10px;
@@ -87,6 +89,7 @@
             }
         }
         .footer-contacts {
+            width: fit-content;
             display: flex;
             align-items: center;
             order: 1;
@@ -108,6 +111,9 @@
             }
         }
         .footer-item {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
             padding-top: 0;
         }
     }
@@ -117,5 +123,12 @@
 @media screen and (min-width: 1024px) {
     .footer {
         padding: 0 60px 30px;
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 0 160px 30px;
     }
 }

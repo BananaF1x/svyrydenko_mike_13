@@ -92,7 +92,6 @@
 // media 1024px
 @media screen and (min-width: 1024px) {
     .publications {
-        padding: 30px 60px;
         .publication__container--flex {
             .publication__item {
                 width: calc((100% - 60px) / 3);
@@ -102,5 +101,12 @@
                 }
             }
         }
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .publications {
+        padding: 30px 160px;
     }
 }

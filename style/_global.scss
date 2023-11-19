@@ -84,5 +84,12 @@ html {
 	}
 }
 .wrapper-hlegal {
-	max-width: 1024px;
+	max-width: 1920px;
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+	.header {
+		padding: 50px 160px;
+	}
 }

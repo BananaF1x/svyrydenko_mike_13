@@ -85,3 +85,31 @@
         }
     }
 }
+
+// media 1440px
+@media screen and (min-width: 1440px) {
+    .oriented {
+        align-items: center;
+        padding: 60px 180px;
+        .oriented__nav {
+            width: 41%;
+        }
+        .oriented__container {
+            width: 59%;
+        }
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .oriented {
+        align-items: center;
+        padding: 60px 280px;
+        .oriented__nav {
+            width: 33%;
+        }
+        .oriented__container {
+            width: 67%;
+        }
+    }
+}

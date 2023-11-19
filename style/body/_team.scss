@@ -95,3 +95,38 @@
         }
     }
 }
+
+// media 1440px
+@media screen and (min-width: 1440px) {
+    .team {
+        .team__tabs {
+            .team__img-container {
+                width: 30%;
+                .team__picture {
+                    height: 348px;
+                }
+            }
+            .team__text-container {
+                width: 70%;
+            }
+        }
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .team {
+        padding: 60px 160px;
+        .team__tabs {
+            .team__img-container {
+                width: 25%;
+                .team__picture {
+                    height: 300px;
+                }
+            }
+            .team__text-container {
+                width: 75%;
+            }
+        }
+    }
+}

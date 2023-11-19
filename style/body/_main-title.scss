@@ -50,3 +50,21 @@
         }
     }
 }
+
+// media 1440px
+@media screen and (min-width: 1440px) {
+    .main-title {
+        .primary-title {
+            padding: 261px 0 305px;
+        }
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .main-title {
+        .primary-title {
+            padding: 361px 0 405px;
+        }
+    }
+}

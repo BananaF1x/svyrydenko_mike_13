@@ -90,3 +90,32 @@
         }
     }
 }
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .clients {
+        padding: 0 100px;
+        margin-bottom: 60px;
+        .clients__title {
+            padding: 0 0 30px;
+        }
+        .clients__wprapp {
+        // border-radius: 12px;
+            .clients__item {
+                width: calc(100% / 4);
+            }
+            .clients__item--blue {
+                border-radius: 12px 0 0 0;
+            }
+            .clients__item--purpur {
+                border-radius: 0 12px 0 0;
+            }
+            .clients__item--bisquit {
+                border-radius: 0 0 0 12px;
+            }
+            .clients__item--black {
+                border-radius: 0 0 12px 0;
+            }
+        }
+    }
+}

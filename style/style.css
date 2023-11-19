@@ -73,9 +73,14 @@ html {
   }
 }
 .wrapper-hlegal {
-  max-width: 1024px;
+  max-width: 1920px;
 }
 
+@media screen and (min-width: 1920px) {
+  .header {
+    padding: 50px 160px;
+  }
+}
 @media screen and (min-width: 375px) {
   .header-contacts {
     width: 100%;
@@ -257,6 +262,16 @@ html {
     padding: 245px 0 289px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .main-title .primary-title {
+    padding: 261px 0 305px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main-title .primary-title {
+    padding: 361px 0 405px;
+  }
+}
 @media screen and (min-width: 375px) {
   .oriented {
     padding: 30px;
@@ -331,6 +346,30 @@ html {
     padding: 0 0 30px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .oriented {
+    align-items: center;
+    padding: 60px 180px;
+  }
+  .oriented .oriented__nav {
+    width: 41%;
+  }
+  .oriented .oriented__container {
+    width: 59%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .oriented {
+    align-items: center;
+    padding: 60px 280px;
+  }
+  .oriented .oriented__nav {
+    width: 33%;
+  }
+  .oriented .oriented__container {
+    width: 67%;
+  }
+}
 @media screen and (min-width: 375px) {
   .services {
     padding: 0 30px;
@@ -390,6 +429,11 @@ html {
 @media screen and (min-width: 1024px) {
   .services .services-container .services-container__block {
     width: calc((100% - 120px) / 3);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .services {
+    padding: 0 160px 60px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -475,6 +519,31 @@ html {
     padding: 6px 0 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .team .team__tabs .team__img-container {
+    width: 30%;
+  }
+  .team .team__tabs .team__img-container .team__picture {
+    height: 348px;
+  }
+  .team .team__tabs .team__text-container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .team {
+    padding: 60px 160px;
+  }
+  .team .team__tabs .team__img-container {
+    width: 25%;
+  }
+  .team .team__tabs .team__img-container .team__picture {
+    height: 300px;
+  }
+  .team .team__tabs .team__text-container {
+    width: 75%;
+  }
+}
 @media screen and (min-width: 375px) {
   .clients .clients__title {
     padding: 60px 0 30px;
@@ -549,6 +618,30 @@ html {
   }
   .clients .clients__wprapp .clients__item {
     width: 25%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .clients {
+    padding: 0 100px;
+    margin-bottom: 60px;
+  }
+  .clients .clients__title {
+    padding: 0 0 30px;
+  }
+  .clients .clients__wprapp .clients__item {
+    width: 25%;
+  }
+  .clients .clients__wprapp .clients__item--blue {
+    border-radius: 12px 0 0 0;
+  }
+  .clients .clients__wprapp .clients__item--purpur {
+    border-radius: 0 12px 0 0;
+  }
+  .clients .clients__wprapp .clients__item--bisquit {
+    border-radius: 0 0 0 12px;
+  }
+  .clients .clients__wprapp .clients__item--black {
+    border-radius: 0 0 12px 0;
   }
 }
 @media screen and (min-width: 375px) {
@@ -632,15 +725,17 @@ html {
   }
 }
 @media screen and (min-width: 1024px) {
-  .publications {
-    padding: 30px 60px;
-  }
   .publications .publication__container--flex .publication__item {
     width: calc((100% - 60px) / 3);
   }
   .publications .publication__container--flex .publication__item:nth-last-child(1) {
     width: calc((100% - 60px) / 3);
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .publications {
+    padding: 30px 160px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -711,10 +806,12 @@ html {
   .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 60px;
   }
   .footer .footer-adress {
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 0 10px;
@@ -727,6 +824,8 @@ html {
     padding: 0;
   }
   .footer .footer-contacts {
+    width: -moz-fit-content;
+    width: fit-content;
     display: flex;
     align-items: center;
     order: 1;
@@ -745,11 +844,19 @@ html {
     padding: 0;
   }
   .footer .footer-item {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
     padding-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   .footer {
     padding: 0 60px 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer {
+    padding: 0 160px 30px;
   }
 }/*# sourceMappingURL=style.css.map */
