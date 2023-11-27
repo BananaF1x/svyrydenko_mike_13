@@ -14,20 +14,10 @@
             display: block;
             width: fit-content;
             margin: 0 auto;
-            .scroll {
-                opacity: 1;
-                display: block;
-            }
-            .scroll-hover {
-                opacity: 1;
-                display: none;
-            }
-            &:hover .scroll-hover {
-                display: block;
-            }
-            &:hover .scroll {
-                display: none;
-            }
+            // .scrol:hover {
+            //     stroke: #F0145A;
+            //     fill: #F0145A;
+            // }
         }
     }
 }

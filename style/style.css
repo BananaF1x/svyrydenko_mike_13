@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-weight: 400;
   text-decoration: none;
 }
 
@@ -236,20 +235,6 @@ html {
     width: fit-content;
     margin: 0 auto;
   }
-  .main-title .btn .scroll {
-    opacity: 1;
-    display: block;
-  }
-  .main-title .btn .scroll-hover {
-    opacity: 1;
-    display: none;
-  }
-  .main-title .btn:hover .scroll-hover {
-    display: block;
-  }
-  .main-title .btn:hover .scroll {
-    display: none;
-  }
 }
 @media screen and (min-width: 768px) {
   .main-title .primary-title {
@@ -390,13 +375,14 @@ html {
     padding-top: 30px;
   }
   .services .services-container .services-container__block .services-container__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 92px;
-    height: 92px;
+    width: -moz-fit-content;
+    width: fit-content;
     border-radius: 24px;
     background-color: white;
+    padding: 14px;
+  }
+  .services .services-container .services-container__block .services-container__img .services-container__icon--mod {
+    padding: 9px;
   }
   .services .services-container .services-container__block .services-container__title {
     padding-top: 30px;
@@ -483,11 +469,16 @@ html {
     justify-content: center;
     gap: 0 15px;
   }
-  .team .team__links-container .team__link .team__links-point {
+  .team .team__links-container .team__link .team__link__point {
     display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    opacity: 0.2;
   }
-  .team .team__links-container .team__link .team__links-point--mod {
-    display: block;
+  .team .team__links-container .team__link .team__link__point:hover {
+    opacity: 0.6;
   }
 }
 @media screen and (min-width: 768px) {

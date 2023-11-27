@@ -18,13 +18,13 @@
             .services-container__block {
                 padding-top: 30px;
                 .services-container__img {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 92px;
-                    height: 92px;
+                    width: fit-content;
                     border-radius: 24px;
                     background-color: white;
+                    padding: 14px;
+                    .services-container__icon--mod {
+                        padding: 9px;
+                    }
                 }
                 .services-container__title {
                     padding-top: 30px;

@@ -46,12 +46,17 @@
             justify-content: center;
             gap: 0 15px;
             .team__link {
-                .team__links-point {
-                    display: block;
+               .team__link__point {
+                display: block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #24A3FF;
+                opacity: 0.2;
+                &:hover {
+                    opacity: 0.6;
                 }
-                .team__links-point--mod {
-                    display: block;
-                }
+               }
             }
         }
     }
