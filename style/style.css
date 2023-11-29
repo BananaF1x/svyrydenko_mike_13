@@ -49,8 +49,13 @@ html {
   text-transform: uppercase;
   color: #24A3FF;
 }
-.arrow-link .arrow-link__img {
-  display: block;
+.arrow-link:hover {
+  color: #F0145A;
+  transition: all 0.3s;
+}
+.arrow-link:hover .arrow-link__img path {
+  stroke: #F0145A;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 375px) {
@@ -115,6 +120,10 @@ html {
     font-weight: 700;
     color: white;
   }
+  .header-contacts .contacts-wrapp .phone-number:hover {
+    color: #F0145A;
+    transition: all 0.3s;
+  }
   .header-contacts .contacts-wrapp .facebook-link {
     display: none;
   }
@@ -138,8 +147,20 @@ html {
     display: block;
     color: #B3B3BA;
   }
+  .header-contacts .contacts-wrapp .address-link:hover {
+    color: white;
+    transition: all 0.3s;
+  }
   .header-contacts .contacts-wrapp .facebook-link {
     display: block;
+  }
+  .header-contacts .contacts-wrapp .facebook-link:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+  }
+  .header-contacts .contacts-wrapp .facebook-link:hover svg path {
+    fill: #F0145A;
+    transition: all 0.3s;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -150,24 +171,43 @@ html {
 }
 @media screen and (min-width: 375px) {
   .header-logo {
-    width: -moz-fit-content;
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
     padding: 15px 0 10px 15px;
   }
-  .header-logo .header-logo__img {
+  .header-logo .header-logo__wrap {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header-logo .header-logo__wrap .header-logo__img {
     display: block;
     width: 70px;
   }
-  .header-logo .header-logo__img--mod {
+  .header-logo .header-logo__wrap .header-logo__img--mod {
     padding-top: 7px;
+  }
+  .header-logo .header-logo__tab {
+    display: block;
+    font-size: 1.25rem;
+    color: white;
+  }
+  .header-logo .header-logo__slash {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .header-logo {
     padding: 30px 0;
   }
-  .header-logo .header-logo__img {
+  .header-logo .header-logo__wrap .header-logo__img {
     width: 130px;
+  }
+  .header-logo .header-logo__tab {
+    font-size: 2.25rem;
+  }
+  .header-logo .header-logo__slash {
+    width: 21px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -183,6 +223,10 @@ html {
     display: block;
     font-weight: 700;
     color: #FFF;
+  }
+  .header-menu .menu .menu__list .menu__link:hover {
+    color: #F0145A;
+    transition: all 0.3s;
   }
 }
 @media screen and (min-width: 768px) {
@@ -234,6 +278,14 @@ html {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+  }
+  .main-title .btn svg:hover path {
+    stroke: #F0145A;
+    transition: all 0.3s;
+  }
+  .main-title .btn svg:hover circle {
+    stroke: #F0145A;
+    transition: all 0.3s;
   }
 }
 @media screen and (min-width: 768px) {
@@ -385,10 +437,15 @@ html {
     padding: 9px;
   }
   .services .services-container .services-container__block .services-container__title {
+    display: block;
     padding-top: 30px;
     font-size: 1.375rem;
     font-weight: 700;
     color: #24A3FF;
+  }
+  .services .services-container .services-container__block .services-container__title:hover {
+    color: #F0145A;
+    transition: all 0.3s;
   }
   .services .services-container .services-container__block .services-container__text {
     padding-top: 15px;
@@ -445,7 +502,7 @@ html {
     padding-top: 5px;
     font-size: 1.875rem;
     font-weight: 700;
-    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -492,17 +549,17 @@ html {
 @media screen and (min-width: 1024px) {
   .team .team__tabs {
     display: flex;
+    border-radius: 12px;
+    overflow: hidden;
   }
   .team .team__tabs .team__img-container {
     width: 45%;
     padding-top: 0;
   }
   .team .team__tabs .team__img-container .team__picture {
-    border-radius: 12px 0 0 12px;
     height: 100%;
   }
   .team .team__tabs .team__text-container {
-    border-radius: 0 12px 12px 0;
     width: 55%;
     padding: 30px;
   }
@@ -523,7 +580,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .team {
-    padding: 60px 160px;
+    padding: 60px 160px 0;
   }
   .team .team__tabs .team__img-container {
     width: 25%;
@@ -613,26 +670,15 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .clients {
-    padding: 0 100px;
+    padding: 60px 100px 0;
     margin-bottom: 60px;
   }
   .clients .clients__title {
     padding: 0 0 30px;
   }
-  .clients .clients__wprapp .clients__item {
-    width: 25%;
-  }
-  .clients .clients__wprapp .clients__item--blue {
-    border-radius: 12px 0 0 0;
-  }
-  .clients .clients__wprapp .clients__item--purpur {
-    border-radius: 0 12px 0 0;
-  }
-  .clients .clients__wprapp .clients__item--bisquit {
-    border-radius: 0 0 0 12px;
-  }
-  .clients .clients__wprapp .clients__item--black {
-    border-radius: 0 0 12px 0;
+  .clients .clients__wprapp {
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 375px) {
@@ -653,17 +699,22 @@ html {
     margin-top: 30px;
     padding-bottom: 30px;
     border-radius: 8px;
+    overflow: hidden;
     background: #fff;
   }
   .publications .publication__container .publication__item .publication__img-wrapp .publication__img {
-    border-radius: 8px 8px 0 0;
     display: block;
     width: 100%;
   }
   .publications .publication__container .publication__item .publication__sub-title {
+    display: block;
     padding: 30px 30px 15px;
     font-weight: 700;
     color: #24A3FF;
+  }
+  .publications .publication__container .publication__item .publication__sub-title:hover {
+    color: #F0145A;
+    transition: all 0.3s;
   }
   .publications .publication__container .publication__item .publication__date {
     width: calc(100% - 60px);

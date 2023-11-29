@@ -54,8 +54,13 @@ html {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #24A3FF;
-	.arrow-link__img {
-		display: block;
+	&:hover {
+		color: #F0145A;
+		transition: all .3s;
+	}
+	&:hover .arrow-link__img path {
+		stroke: #F0145A;
+		transition: all .3s;
 	}
 }
 

@@ -35,6 +35,10 @@
             .phone-number {
                 font-weight: 700;
                 color: white;
+                &:hover {
+                    color: #F0145A;
+                    transition: all .3s;
+                }
             }
             .facebook-link {
                 display: none;
@@ -60,9 +64,21 @@
             .address-link {
                 display: block;
                 color: #B3B3BA;
+                &:hover {
+                    color: white;
+                    transition: all .3s;
+                }
             }
             .facebook-link {
                 display: block;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: all .3s;
+                }
+                &:hover svg path {
+                    fill: #F0145A;
+                    transition: all .3s;
+                }
             }
         }
     } 

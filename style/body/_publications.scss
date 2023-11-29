@@ -17,18 +17,23 @@
                 margin-top: 30px;
                 padding-bottom: 30px;
                 border-radius: 8px;
+                overflow: hidden;
                 background: #fff;
                 .publication__img-wrapp {
                     .publication__img {
-                        border-radius: 8px 8px 0 0;
                         display: block;
                         width: 100%;
                     }
                 }
                 .publication__sub-title {
+                    display: block;
                     padding: 30px 30px 15px;
                     font-weight: 700;
                     color: #24A3FF;
+                    &:hover {
+                        color: #F0145A;
+                        transition: all .3s;
+                    }
                 }
                 .publication__date {
                     width: calc(100% - 60px);

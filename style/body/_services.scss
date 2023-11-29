@@ -27,10 +27,15 @@
                     }
                 }
                 .services-container__title {
+                    display: block;
                     padding-top: 30px;
                     font-size: 1.375rem;
                     font-weight: 700;
                     color: #24A3FF;
+                    &:hover {
+                        color: #F0145A;
+                        transition: all .3s;
+                    }
                 }
                 .services-container__text {
                     padding-top: 15px;

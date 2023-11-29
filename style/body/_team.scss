@@ -20,7 +20,7 @@
                     padding-top: 5px;
                     font-size: 1.875rem;
                     font-weight: 700;
-                    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+                    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -81,16 +81,16 @@
     .team {
         .team__tabs {
             display: flex;
+            border-radius: 12px;
+            overflow: hidden;
             .team__img-container {
                 width: 45%;
                 padding-top: 0;
                 .team__picture {
-                    border-radius: 12px 0 0 12px;
                     height: 100%;
                 }
             }
             .team__text-container {
-                border-radius: 0 12px 12px 0;
                 width: 55%;
                 padding: 30px;
                 .team__primary-text--mod {
@@ -121,7 +121,7 @@
 // media 1920px
 @media screen and (min-width: 1920px) {
     .team {
-        padding: 60px 160px;
+        padding: 60px 160px 0;
         .team__tabs {
             .team__img-container {
                 width: 25%;

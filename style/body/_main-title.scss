@@ -14,10 +14,14 @@
             display: block;
             width: fit-content;
             margin: 0 auto;
-            // .scrol:hover {
-            //     stroke: #F0145A;
-            //     fill: #F0145A;
-            // }
+            svg:hover path {
+                stroke: #F0145A;
+                transition: all .3s;
+            }
+            svg:hover circle {
+                stroke: #F0145A;
+                transition: all .3s;
+            }
         }
     }
 }

@@ -8,6 +8,10 @@
                     display: block;
                     font-weight: 700;
                     color: #FFF;
+                    &:hover {
+                        color: #F0145A;
+                        transition: all .3s;
+                    }
                 }
             }
         }
