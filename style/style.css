@@ -85,10 +85,6 @@ html {
     position: relative;
   }
 }
-.wrapper-hlegal {
-  max-width: 1920px;
-}
-
 @media screen and (min-width: 1920px) {
   .header {
     padding: 50px 160px;
@@ -114,6 +110,10 @@ html {
     color: white;
     font-size: 0.75rem;
     padding: 5px 7px;
+  }
+  .header-contacts .language-selection .language-selection__list .language-selection__link:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
   }
   .header-contacts .language-selection .language-selection__list:nth-last-child(1) {
     border-radius: 8px;
@@ -189,6 +189,10 @@ html {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .header-logo .header-logo__wrap:hover {
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
   .header-logo .header-logo__wrap .header-logo__img {
     display: block;
     width: 70px;
@@ -236,6 +240,7 @@ html {
   .header-menu .menu .menu__list .menu__link:hover {
     color: #F0145A;
     transition: all 0.3s;
+    transform: scale(1.1);
   }
 }
 @media screen and (min-width: 768px) {
@@ -931,6 +936,10 @@ html {
     color: #323264;
     text-align: center;
   }
+  .footer .footer-adress .address-link:hover {
+    color: #24A3FF;
+    transition: all 0.3s;
+  }
   .footer .footer-adress .point {
     display: none;
   }
@@ -944,6 +953,10 @@ html {
     font-weight: 700;
     font-size: 0.75rem;
   }
+  .footer .footer-adress .footer-adress__map:hover {
+    color: #323264;
+    transition: all 0.3s;
+  }
   .footer .footer-contacts .facebook-link {
     display: block;
     width: -moz-fit-content;
@@ -952,6 +965,10 @@ html {
   }
   .footer .footer-contacts .facebook-link img {
     display: block;
+  }
+  .footer .footer-contacts .facebook-link:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
   }
   .footer .footer-contacts .point {
     display: none;
@@ -963,11 +980,19 @@ html {
     font-weight: 700;
     color: #46466E;
   }
+  .footer .footer-contacts .phone-number:hover {
+    color: #24A3FF;
+    transition: all 0.3s;
+  }
   .footer .footer-contacts .footer-email {
     display: block;
     text-align: center;
     font-weight: 700;
     color: #24A3FF;
+  }
+  .footer .footer-contacts .footer-email:hover {
+    color: #323264;
+    transition: all 0.3s;
   }
   .footer .footer-item {
     padding-top: 30px;

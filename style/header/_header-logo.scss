@@ -7,6 +7,10 @@
         padding: 15px 0 10px 15px;
         .header-logo__wrap {
             width: fit-content;
+            &:hover {
+                transform: scale(.9);
+                transition: all .3s;
+            }
             .header-logo__img {
                 display: block;
                 width: 70px;
@@ -18,7 +22,7 @@
         .header-logo__tab {
             display: block;
             font-size: 1.25rem;
-            color: white;
+            color: $mainColorWhite;
         }
         .header-logo__slash {
             display: block;

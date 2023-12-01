@@ -12,7 +12,7 @@
                 .oriented__link {
                     font-size: 1.875rem;
                     font-weight: 700;
-                    color: #B3B3BA;
+                    color: $specialColorAdd;
                     white-space: nowrap;
                     &:hover {
                         background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));

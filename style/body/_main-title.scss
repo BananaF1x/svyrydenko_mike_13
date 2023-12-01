@@ -15,11 +15,11 @@
             width: fit-content;
             margin: 0 auto;
             svg:hover path {
-                stroke: #F0145A;
+                stroke: $primaryColor;
                 transition: all .3s;
             }
             svg:hover circle {
-                stroke: #F0145A;
+                stroke: $primaryColor;
                 transition: all .3s;
             }
         }

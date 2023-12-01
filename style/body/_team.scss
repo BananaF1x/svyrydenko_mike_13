@@ -29,14 +29,14 @@
                     display: block;
                     padding-top: 30px;
                     font-weight: 700;
-                    color: #B3B3BA;
+                    color: $specialColorAdd;
                 }
                 .team__primary-text--mod {
                     display: block;
                     padding: 6px 0 30px;
                     font-size: 0.875rem;
                     line-height: 22px;
-                    color: #B3B3BA;
+                    color: $specialColorAdd;
                 }
             }
         }
@@ -51,7 +51,7 @@
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
-                background-color: #24A3FF;
+                background-color: $primaryColorMod;
                 opacity: 0.2;
                 &:hover {
                     opacity: 0.6;

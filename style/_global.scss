@@ -23,10 +23,10 @@ html {
 	font-family: Montserrat;
 	font-weight: 400;
 	line-height: normal;
-	color: white;
+	color: $mainColor;
 }
 
-
+// Global styles
 .main-bc {
 	background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 	border-radius: 0px 0px 12px 12px;
@@ -40,14 +40,14 @@ html {
 .after-services {
 	.after {
 		margin: 0 auto;
-		width: 98%;
+		width: 97%;
 		height: 10px;
-		background: #CACADB;
+		background: $specialColor;
 		border-radius: 0 0 12px 12px;
 	}
 	.after--small {
-		max-width: 96%;
-		background: #E7E7F2;
+		max-width: 95%;
+		background: $specialColorMod;
 	}
 }
 
@@ -58,13 +58,13 @@ html {
 	font-size: 0.875rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #24A3FF;
+	color: $primaryColorMod;
 	&:hover {
-		color: #F0145A;
+		color: $primaryColor;
 		transition: all .3s;
 	}
 	&:hover .arrow-link__img path {
-		stroke: #F0145A;
+		stroke: $primaryColor;
 		transition: all .3s;
 	}
 }
@@ -95,9 +95,6 @@ html {
 	.header {
 		position: relative;
 	}
-}
-.wrapper-hlegal {
-	max-width: 1920px;
 }
 
 // media 1920px

@@ -8,6 +8,10 @@
                 display: block;
                 color: #323264;
                 text-align: center;
+                &:hover {
+                    color: #24A3FF;
+                    transition: all .3s;
+                }
             }
             .point {
                 display: none;
@@ -21,6 +25,10 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 0.75rem;
+                &:hover {
+                    color: #323264;
+                    transition: all .3s;
+                }
             }
         }
         .footer-contacts {
@@ -30,6 +38,10 @@
                 margin: 0 auto;
                 img {
                     display: block;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all .3s;
                 }
             }
             .point {
@@ -41,12 +53,20 @@
                 text-align: center;
                 font-weight: 700;
                 color: #46466E;
+                &:hover {
+                    color: #24A3FF;
+                    transition: all .3s;
+                }
             }
             .footer-email {
                 display: block;
                 text-align: center;
                 font-weight: 700;
                 color: #24A3FF;
+                &:hover {
+                    color: #323264;
+                    transition: all .3s;
+                }
             }
         }
         .footer-item {
@@ -107,7 +127,6 @@
             }
             .phone-number {
                 padding: 0;
-                
             }
         }
         .footer-item {

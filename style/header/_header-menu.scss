@@ -7,10 +7,11 @@
                 .menu__link {
                     display: block;
                     font-weight: 700;
-                    color: #FFF;
+                    color: $mainColorWhite;
                     &:hover {
-                        color: #F0145A;
+                        color: $primaryColor;
                         transition: all .3s;
+                        transform: scale(1.1);
                     }
                 }
             }
