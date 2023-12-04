@@ -10,7 +10,8 @@ ul {
   list-style: none;
 }
 
-button {
+button,
+input {
   outline: 0;
   border: 0;
 }
@@ -35,13 +36,13 @@ html {
 
 .after-services .after {
   margin: 0 auto;
-  width: 98%;
+  width: 97%;
   height: 10px;
   background: #CACADB;
   border-radius: 0 0 12px 12px;
 }
 .after-services .after--small {
-  max-width: 96%;
+  max-width: 95%;
   background: #E7E7F2;
 }
 
@@ -90,6 +91,14 @@ html {
     padding: 50px 160px;
   }
 }
+.services-entry-page {
+  display: none;
+}
+
+.popup {
+  display: block;
+}
+
 @media screen and (min-width: 375px) {
   .header-contacts {
     width: 100%;
@@ -235,7 +244,7 @@ html {
   .header-menu .menu .menu__list .menu__link {
     display: block;
     font-weight: 700;
-    color: #FFF;
+    color: white;
   }
   .header-menu .menu .menu__list .menu__link:hover {
     color: #F0145A;
@@ -714,7 +723,7 @@ html {
     padding-bottom: 30px;
     border-radius: 8px;
     overflow: hidden;
-    background: #fff;
+    background: white;
   }
   .publications .publication__container .publication__item .publication__img-wrapp .publication__img {
     display: block;
@@ -845,6 +854,7 @@ html {
   .intro .intro__btn:hover {
     opacity: 0.9;
     cursor: pointer;
+    transition: all 0.3s;
   }
 }
 @media screen and (min-width: 768px) {
@@ -924,6 +934,96 @@ html {
 @media screen and (min-width: 1920px) {
   .services-in-this-area {
     padding: 0 280px 60px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .popup .popup__container {
+    background-color: #F5F5FA;
+    padding: 30px;
+  }
+  .popup .popup__container .popup__wrap {
+    display: flex;
+    gap: 0 6px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .popup .popup__container .popup__wrap .popup__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .popup .popup__container .popup__wrap .popup__btn {
+    background-color: #F5F5FA;
+  }
+  .popup .popup__container .popup__wrap .popup__btn:hover {
+    background-color: #E6E6F0;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .popup .popup__container .popup__form .popup__form-element {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  .popup .popup__container .popup__form .popup__form-element::-moz-placeholder {
+    font-family: Montserrat;
+    color: #B3B3BA;
+    line-height: 26px;
+  }
+  .popup .popup__container .popup__form .popup__form-element::placeholder {
+    font-family: Montserrat;
+    color: #B3B3BA;
+    line-height: 26px;
+  }
+  .popup .popup__container .popup__form .popup__form-element::-webkit-outer-spin-button, .popup .popup__container .popup__form .popup__form-element::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .popup .popup__container .popup__form .popup__form-text {
+    display: block;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+  }
+  .popup .popup__container .popup__form .message {
+    height: 130px;
+  }
+  .popup .popup__container .popup__form-btn {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #24A3FF;
+    padding: 18px 30px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+  }
+  .popup .popup__container .popup__form-btn:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .popup {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323264;
+  }
+  .popup .popup__container {
+    max-width: 650px;
+    border-radius: 12px;
+  }
+  .popup .popup__container .popup__wrap .popup__title {
+    font-size: 2.375rem;
   }
 }
 @media screen and (min-width: 375px) {

@@ -13,7 +13,8 @@ ul {
 	list-style: none;
 }
 
-button {
+button,
+input {
 	outline: 0;
 	border: 0;
 }
@@ -23,7 +24,7 @@ html {
 	font-family: Montserrat;
 	font-weight: 400;
 	line-height: normal;
-	color: $mainColor;
+	color: $mainColorWhite;
 }
 
 // Global styles
@@ -102,4 +103,12 @@ html {
 	.header {
 		padding: 50px 160px;
 	}
+}
+
+.services-entry-page {
+	display: none;
+}
+
+.popup {
+	display: block;
 }

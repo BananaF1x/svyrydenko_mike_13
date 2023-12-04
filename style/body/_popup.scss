@@ -1,0 +1,95 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .popup {
+        .popup__container {
+            background-color: #F5F5FA;
+            padding: 30px;
+            .popup__wrap {
+                display: flex;
+                gap: 0 6px;
+                justify-content: space-between;
+                align-items: flex-start;
+                .popup__title {
+                    font-size: 1.875rem;
+                    font-weight: 700;
+                    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .popup__btn {
+                    background-color: #F5F5FA;
+                    &:hover {
+                        background-color: #E6E6F0;
+                        border-radius: 8px;
+                        transition: all .3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .popup__form {
+                .popup__form-element {
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin-top: 15px;
+                    &::placeholder {
+                        font-family: Montserrat;
+                        color: $specialColorAdd;
+                        line-height: 26px;
+                    }
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                }
+                .popup__form-text {
+                    display: block;
+                    padding-top: 30px;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $specialColorAdd;
+                }
+                .message {
+                    height: 130px;
+                }
+            }
+            .popup__form-btn {
+                width: 100%;
+                margin-top: 30px;
+                background-color: $primaryColorMod;
+                padding: 18px 30px;
+                border-radius: 12px;
+                color: $mainColorWhite;
+                font-weight: 700;
+                &:hover {
+                    opacity: .7;
+                    transition: all .3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .popup {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #323264;
+        .popup__container {
+            max-width: 650px;
+            border-radius: 12px;
+            .popup__wrap {
+                .popup__title {
+                    font-size: 2.375rem;
+                }
+            }
+        }
+    }
+}
