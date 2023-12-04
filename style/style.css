@@ -92,11 +92,11 @@ html {
   }
 }
 .services-entry-page {
-  display: none;
+  display: block;
 }
 
 .popup {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 375px) {
@@ -955,10 +955,10 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .popup .popup__container .popup__wrap .popup__btn {
+  .popup .popup__container .popup__wrap .popup__exit-btn {
     background-color: #F5F5FA;
   }
-  .popup .popup__container .popup__wrap .popup__btn:hover {
+  .popup .popup__container .popup__wrap .popup__exit-btn:hover {
     background-color: #E6E6F0;
     border-radius: 8px;
     transition: all 0.3s;
