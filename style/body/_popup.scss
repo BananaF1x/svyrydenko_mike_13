@@ -31,12 +31,13 @@
             }
             .popup__form {
                 .popup__form-element {
+                    font-family: Montserrat;
+                    background-color: $mainColorWhite;
                     width: 100%;
                     padding: 15px;
                     border-radius: 8px;
                     margin-top: 15px;
                     &::placeholder {
-                        font-family: Montserrat;
                         color: $specialColorAdd;
                     }
                     &::-webkit-outer-spin-button,
@@ -68,6 +69,7 @@
                 border-radius: 12px;
                 color: $mainColorWhite;
                 font-weight: 700;
+                font-size: 1rem;
                 &:hover {
                     opacity: .7;
                     transition: all .3s;
