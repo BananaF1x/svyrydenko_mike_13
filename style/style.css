@@ -15,6 +15,7 @@ input,
 textarea {
   outline: 0;
   border: 0;
+  background: none;
 }
 
 textarea {
@@ -268,6 +269,9 @@ html {
     font-weight: 700;
     color: white;
   }
+  .header-menu .menu .menu__list .active-page {
+    color: #F0145A;
+  }
   .active {
     display: flex;
     position: fixed;
@@ -299,7 +303,11 @@ html {
     font-size: 1rem;
   }
   .header-menu .menu .menu__list .menu__link:hover {
-    color: #F0145A;
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: all 0.3s;
     transform: scale(1.1);
   }
@@ -384,13 +392,17 @@ html {
     padding-bottom: 30px;
     overflow-x: auto;
   }
-  .oriented .oriented__nav .oriented__list .oriented__link {
+  .oriented .oriented__nav .oriented__list .oriented__btn {
     font-size: 1.875rem;
     font-weight: 700;
     color: #B3B3BA;
     white-space: nowrap;
   }
-  .oriented .oriented__nav .oriented__list .oriented__link:hover {
+  .oriented .oriented__nav .oriented__list .oriented__btn:hover {
+    color: #F0145A;
+    cursor: pointer;
+  }
+  .oriented .oriented__nav .oriented__list .active-btn {
     font-weight: 700;
     background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
@@ -398,6 +410,9 @@ html {
     -webkit-text-fill-color: transparent;
   }
   .oriented .oriented__nav::-webkit-scrollbar {
+    display: none;
+  }
+  .oriented .oriented__container {
     display: none;
   }
   .oriented .oriented__container .oriented__title {
@@ -409,6 +424,9 @@ html {
     font-size: 1.1875rem;
     line-height: 30px;
   }
+  .oriented .active-container {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .oriented {
@@ -417,7 +435,7 @@ html {
   .oriented .oriented__nav {
     padding-bottom: 60px;
   }
-  .oriented .oriented__nav .oriented__list .oriented__link {
+  .oriented .oriented__nav .oriented__list .oriented__btn {
     font-size: 2.375rem;
   }
   .oriented .oriented__container .oriented__title {

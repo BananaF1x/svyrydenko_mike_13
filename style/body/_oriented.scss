@@ -9,14 +9,18 @@
             padding-bottom: 30px;
             overflow-x: auto;
             .oriented__list {
-                .oriented__link {
+                .oriented__btn {
                     font-size: 1.875rem;
                     font-weight: 700;
                     color: $specialColorAdd;
                     white-space: nowrap;
                     &:hover {
-                        @include title;
+                        color: $primaryColor;
+                        cursor: pointer
                     }
+                }
+                .active-btn {
+                    @include title;
                 }
             }
             &::-webkit-scrollbar {
@@ -24,6 +28,7 @@
           }
         }
         .oriented__container {
+            display: none;
             .oriented__title {
                 padding: 30px 0;
                 font-size: 1.25rem;
@@ -33,6 +38,9 @@
                 font-size: 1.1875rem;
                 line-height: 30px;
             }
+        }
+        .active-container {
+            display: block;
         }
     }
 }
@@ -44,7 +52,7 @@
         .oriented__nav {
             padding-bottom: 60px;
             .oriented__list {
-                .oriented__link {
+                .oriented__btn  {
                     font-size: 2.375rem;
                 }
             }

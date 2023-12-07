@@ -30,6 +30,9 @@
                     font-weight: 700;
                     color: $mainColorWhite;
                 }
+                .active-page {
+                    color: $primaryColor;
+                }
             }
         }
     }
@@ -61,7 +64,7 @@
                 .menu__link {
                     font-size: 1rem;
                     &:hover {
-                        color: $primaryColor;
+                        @include title;
                         transition: all .3s;
                         transform: scale(1.1);
                     }
