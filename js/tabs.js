@@ -8,9 +8,9 @@ teamTabs.forEach((e)=>{
                 if(item.classList.contains("active-tab")) item.classList.remove("active-tab");
             });
             e.classList.add("active-list");
-            if(e.id == "1") document.querySelectorAll(".team__tabs")[0].classList.add("active-tab");
-            if(e.id == "2") document.querySelectorAll(".team__tabs")[1].classList.add("active-tab");
-            if(e.id == "3") document.querySelectorAll(".team__tabs")[2].classList.add("active-tab");
+            if(e.id == "oleksandr-oleksandrovskyi") document.querySelectorAll(".team__tabs")[0].classList.add("active-tab");
+            if(e.id == "oksana-kobzar") document.querySelectorAll(".team__tabs")[1].classList.add("active-tab");
+            if(e.id == "evgeny-patrikov") document.querySelectorAll(".team__tabs")[2].classList.add("active-tab");
         });
     };
 });
@@ -25,10 +25,10 @@ orientedTabs.forEach((e)=>{
                 if(item.classList.contains("active-container")) item.classList.remove("active-container");
             });
             e.classList.add("active-btn");
-            if(e.id == "11") document.querySelectorAll(".oriented__container")[0].classList.add("active-container");
-            if(e.id == "22") document.querySelectorAll(".oriented__container")[1].classList.add("active-container");
-            if(e.id == "33") document.querySelectorAll(".oriented__container")[2].classList.add("active-container");
-            if(e.id == "44") document.querySelectorAll(".oriented__container")[3].classList.add("active-container");
+            if(e.id == "legal-services") document.querySelectorAll(".oriented__container")[0].classList.add("active-container");
+            if(e.id == "protection") document.querySelectorAll(".oriented__container")[1].classList.add("active-container");
+            if(e.id == "structuring") document.querySelectorAll(".oriented__container")[2].classList.add("active-container");
+            if(e.id == "building") document.querySelectorAll(".oriented__container")[3].classList.add("active-container");
         });
     };
 });

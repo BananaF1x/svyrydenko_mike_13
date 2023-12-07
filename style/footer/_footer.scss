@@ -146,11 +146,17 @@
     .footer {
         padding: 0 60px 30px;
     }
+    .footer-pading {
+        padding-top: 30px;
+    }
 }
 
 // media 1920px
 @media screen and (min-width: 1920px) {
     .footer {
         padding: 0 160px 30px;
+    }
+    .footer-pading {
+        padding-top: 30px;
     }
 }
