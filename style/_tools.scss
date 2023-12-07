@@ -6,3 +6,12 @@ $specialColorMod: #E7E7F2;
 $primaryColor: #F0145A;
 $primaryColorMod: #24A3FF;
 $secondaryColor: #323264;
+
+// Mixins
+@mixin title {
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

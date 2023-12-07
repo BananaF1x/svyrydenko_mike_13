@@ -1,21 +1,43 @@
 // media 375px
 @media screen and (min-width: 375px) {
     .header-menu {
+        width: 100%;
         display: none;
+        justify-content: center;
         .menu {
-            .menu__list {
-                .menu__link {
-                    display: block;
-                    font-weight: 700;
-                    color: $mainColorWhite;
+            width: 80%;
+            background: #686887;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            .menu__exit-list {
+                text-align: end;
+                .menu__exit-btn {
+                    background-color: #686887;
+                    border-radius: 8px;
                     &:hover {
-                        color: $primaryColor;
+                        background-color: #E6E6F0;
                         transition: all .3s;
-                        transform: scale(1.1);
+                        cursor: pointer;
                     }
                 }
             }
+            .menu__list {
+                padding: 20px 0;
+                .menu__link {
+                    font-size: 1.5rem;
+                    display: block;
+                    font-weight: 700;
+                    color: $mainColorWhite;
+                }
+            }
         }
+    }
+    .active {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 }
 
@@ -24,10 +46,27 @@
     .header-menu {
         width: 100%;
         display: flex;
+        justify-content: flex-start;
         .menu {
+            width: fit-content;
             display: flex;
-            align-items: center;
+            background: none;
+            padding: 0;
             gap: 0 15px;
+            .menu__exit-list {
+                display: none;
+            }
+            .menu__list {
+                padding: 0;
+                .menu__link {
+                    font-size: 1rem;
+                    &:hover {
+                        color: $primaryColor;
+                        transition: all .3s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
 }

@@ -1,7 +1,13 @@
 // media 375px
 @media screen and (min-width: 375px) {
     .popup {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #323264;
         .popup__container {
+            width: 100%;
             background-color: #F5F5FA;
             padding: 30px;
             .popup__wrap {
@@ -11,11 +17,7 @@
                 align-items: flex-start;
                 .popup__title {
                     font-size: 1.875rem;
-                    font-weight: 700;
-                    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include title;
                 }
                 .popup__exit-btn {
                     background-color: #F5F5FA;
@@ -36,7 +38,6 @@
                     &::placeholder {
                         font-family: Montserrat;
                         color: $specialColorAdd;
-                        line-height: 26px;
                     }
                     &::-webkit-outer-spin-button,
                     &::-webkit-inner-spin-button {
@@ -54,6 +55,9 @@
                 }
                 .message {
                     height: 130px;
+                    &::placeholder {
+                        line-height: initial;
+                    }
                 }
             }
             .popup__form-btn {
@@ -78,10 +82,6 @@
 @media screen and (min-width: 1024px) {
     .popup {
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #323264;
         .popup__container {
             max-width: 650px;
             border-radius: 12px;

@@ -6,11 +6,7 @@
             .title {
                 padding-top:10px;
                 font-size: 1.875rem;
-                font-weight: 700;
-                background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include title;
             }
         }
         .services-container {

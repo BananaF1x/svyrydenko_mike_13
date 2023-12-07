@@ -6,12 +6,8 @@
         .publication__container {
             .publication__title {
                 padding-top: 5px;
-                font-weight: 700;
                 font-size: 1.875rem;
-                background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include title;
             }
             .publication__item {
                 margin-top: 30px;

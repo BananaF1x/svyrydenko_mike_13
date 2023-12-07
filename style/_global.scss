@@ -14,9 +14,14 @@ ul {
 }
 
 button,
-input {
+input,
+textarea {
 	outline: 0;
 	border: 0;
+}
+
+textarea {
+	resize: none;
 }
 
 html {
@@ -103,12 +108,4 @@ html {
 	.header {
 		padding: 50px 160px;
 	}
-}
-
-.services-entry-page {
-	display: block;
-}
-
-.popup {
-	display: none;
 }

@@ -3,6 +3,8 @@
     .team {
         padding: 0 30px;
         .team__tabs {
+            display: none;
+            flex-direction: column;
             .team__img-container {
                 padding-top: 30px;
                 .team__picture {
@@ -19,11 +21,7 @@
                 .team__primary-text {
                     padding-top: 5px;
                     font-size: 1.875rem;
-                    font-weight: 700;
-                    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include title;
                 }
                 .team__primary-text--spec {
                     display: block;
@@ -40,13 +38,16 @@
                 }
             }
         }
-        .team__links-container {
+        .active-tab {
+            display: flex;
+        }
+        .team__lists-container {
             padding-top: 30px;
             display: flex;
             justify-content: center;
             gap: 0 15px;
-            .team__link {
-               .team__link__point {
+            .team__list {
+               .team__list__point {
                 display: block;
                 width: 16px;
                 height: 16px;
@@ -54,12 +55,20 @@
                 background-color: $primaryColorMod;
                 opacity: 0.2;
                 &:hover {
+                    cursor: pointer;
                     opacity: 0.6;
+                }
+               }
+               .active-list {
+                opacity: 1;
+                &:hover {
+                    opacity: 1;
                 }
                }
             }
         }
     }
+    
 }
 
 // media 768px
@@ -80,7 +89,8 @@
 @media screen and (min-width: 1024px) {
     .team {
         .team__tabs {
-            display: flex;
+            // display: flex;
+            flex-direction: row;
             border-radius: 12px;
             overflow: hidden;
             .team__img-container {

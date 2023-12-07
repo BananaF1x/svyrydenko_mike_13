@@ -11,9 +11,14 @@ ul {
 }
 
 button,
-input {
+input,
+textarea {
   outline: 0;
   border: 0;
+}
+
+textarea {
+  resize: none;
 }
 
 html {
@@ -91,14 +96,6 @@ html {
     padding: 50px 160px;
   }
 }
-.services-entry-page {
-  display: block;
-}
-
-.popup {
-  display: none;
-}
-
 @media screen and (min-width: 375px) {
   .header-contacts {
     width: 100%;
@@ -239,28 +236,72 @@ html {
 }
 @media screen and (min-width: 375px) {
   .header-menu {
+    width: 100%;
     display: none;
+    justify-content: center;
+  }
+  .header-menu .menu {
+    width: 80%;
+    background: #686887;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+  }
+  .header-menu .menu .menu__exit-list {
+    text-align: end;
+  }
+  .header-menu .menu .menu__exit-list .menu__exit-btn {
+    background-color: #686887;
+    border-radius: 8px;
+  }
+  .header-menu .menu .menu__exit-list .menu__exit-btn:hover {
+    background-color: #E6E6F0;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .header-menu .menu .menu__list {
+    padding: 20px 0;
   }
   .header-menu .menu .menu__list .menu__link {
+    font-size: 1.5rem;
     display: block;
     font-weight: 700;
     color: white;
   }
-  .header-menu .menu .menu__list .menu__link:hover {
-    color: #F0145A;
-    transition: all 0.3s;
-    transform: scale(1.1);
+  .active {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
 @media screen and (min-width: 768px) {
   .header-menu {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
   }
   .header-menu .menu {
+    width: -moz-fit-content;
+    width: fit-content;
     display: flex;
-    align-items: center;
+    background: none;
+    padding: 0;
     gap: 0 15px;
+  }
+  .header-menu .menu .menu__exit-list {
+    display: none;
+  }
+  .header-menu .menu .menu__list {
+    padding: 0;
+  }
+  .header-menu .menu .menu__list .menu__link {
+    font-size: 1rem;
+  }
+  .header-menu .menu .menu__list .menu__link:hover {
+    color: #F0145A;
+    transition: all 0.3s;
+    transform: scale(1.1);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -350,7 +391,8 @@ html {
     white-space: nowrap;
   }
   .oriented .oriented__nav .oriented__list .oriented__link:hover {
-    background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -438,7 +480,7 @@ html {
     padding-top: 10px;
     font-size: 1.875rem;
     font-weight: 700;
-    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -506,6 +548,10 @@ html {
   .team {
     padding: 0 30px;
   }
+  .team .team__tabs {
+    display: none;
+    flex-direction: column;
+  }
   .team .team__tabs .team__img-container {
     padding-top: 30px;
   }
@@ -543,13 +589,16 @@ html {
     line-height: 22px;
     color: #B3B3BA;
   }
-  .team .team__links-container {
+  .team .active-tab {
+    display: flex;
+  }
+  .team .team__lists-container {
     padding-top: 30px;
     display: flex;
     justify-content: center;
     gap: 0 15px;
   }
-  .team .team__links-container .team__link .team__link__point {
+  .team .team__lists-container .team__list .team__list__point {
     display: block;
     width: 16px;
     height: 16px;
@@ -557,8 +606,15 @@ html {
     background-color: #24A3FF;
     opacity: 0.2;
   }
-  .team .team__links-container .team__link .team__link__point:hover {
+  .team .team__lists-container .team__list .team__list__point:hover {
+    cursor: pointer;
     opacity: 0.6;
+  }
+  .team .team__lists-container .team__list .active-list {
+    opacity: 1;
+  }
+  .team .team__lists-container .team__list .active-list:hover {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -571,7 +627,7 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .team .team__tabs {
-    display: flex;
+    flex-direction: row;
     border-radius: 12px;
     overflow: hidden;
   }
@@ -711,8 +767,8 @@ html {
   }
   .publications .publication__container .publication__title {
     padding-top: 5px;
-    font-weight: 700;
     font-size: 1.875rem;
+    font-weight: 700;
     background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -937,7 +993,15 @@ html {
   }
 }
 @media screen and (min-width: 375px) {
+  .popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #323264;
+  }
   .popup .popup__container {
+    width: 100%;
     background-color: #F5F5FA;
     padding: 30px;
   }
@@ -973,12 +1037,10 @@ html {
   .popup .popup__container .popup__form .popup__form-element::-moz-placeholder {
     font-family: Montserrat;
     color: #B3B3BA;
-    line-height: 26px;
   }
   .popup .popup__container .popup__form .popup__form-element::placeholder {
     font-family: Montserrat;
     color: #B3B3BA;
-    line-height: 26px;
   }
   .popup .popup__container .popup__form .popup__form-element::-webkit-outer-spin-button, .popup .popup__container .popup__form .popup__form-element::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -994,6 +1056,12 @@ html {
   }
   .popup .popup__container .popup__form .message {
     height: 130px;
+  }
+  .popup .popup__container .popup__form .message::-moz-placeholder {
+    line-height: initial;
+  }
+  .popup .popup__container .popup__form .message::placeholder {
+    line-height: initial;
   }
   .popup .popup__container .popup__form-btn {
     width: 100%;
@@ -1013,10 +1081,6 @@ html {
 @media screen and (min-width: 1024px) {
   .popup {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #323264;
   }
   .popup .popup__container {
     max-width: 650px;
