@@ -493,7 +493,7 @@ html {
 }
 @media screen and (min-width: 375px) {
   .services {
-    padding: 0 30px;
+    padding: 0 30px 60px;
   }
   .services .services-wrapp .title {
     padding-top: 10px;
@@ -541,6 +541,7 @@ html {
     padding: 0 60px 60px;
   }
   .services .services-wrapp .title {
+    padding-top: 60px;
     font-size: 2.375rem;
   }
   .services .services-container {
@@ -1242,6 +1243,9 @@ html {
     justify-content: flex-end;
     width: 50%;
     padding-top: 0;
+  }
+  .footer::before {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {

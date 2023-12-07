@@ -1,10 +1,10 @@
 // media 375px
 @media screen and (min-width: 375px) {
     .services {
-        padding: 0 30px;
+        padding: 0 30px 60px;
         .services-wrapp {
             .title {
-                padding-top:10px;
+                padding-top: 10px;
                 font-size: 1.875rem;
                 @include title;
             }
@@ -48,6 +48,7 @@
         padding:0 60px 60px;
         .services-wrapp {
             .title {
+                padding-top: 60px;
                 font-size: 2.375rem;
             }
         }

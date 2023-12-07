@@ -135,6 +135,9 @@
             width: 50%;
             padding-top: 0;
         }
+        &::before {
+            display: none;
+        }
     }
 }
 
