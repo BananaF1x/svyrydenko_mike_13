@@ -79,13 +79,13 @@ html {
 	.after-services {
 		.after {
 			margin: 0 auto;
-			width: 97%;
+			width: 89%;
 			height: 10px;
 			background: $specialColor;
 			border-radius: 0 0 12px 12px;
 		}
 		.after--small {
-			width: 95%;
+			width: 79%;
 			background: $specialColorMod;
 		}
 	}
@@ -96,6 +96,15 @@ html {
 	.header {
 		padding: 50px 8% 0;
 	}
+
+	.after-services {
+		.after {
+			width: 95%;
+		}
+		.after--small {
+			width: 90%
+		}
+	}
 }
 
 // media 1024px
@@ -103,11 +112,29 @@ html {
 	.header {
 		position: relative;
 	}
+
+	.after-services {
+		.after {
+			width: 96%;
+		}
+		.after--small {
+			width: 92%
+		}
+	}
 }
 
 // media 1920px
 @media screen and (min-width: 1920px) {
 	.header {
 		padding: 50px 8%;
+	}
+
+	.after-services {
+		.after {
+			width: 98%;
+		}
+		.after--small {
+			width: 96%
+		}
 	}
 }
