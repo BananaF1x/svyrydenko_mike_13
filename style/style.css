@@ -270,6 +270,15 @@ html {
     font-weight: 700;
     color: white;
   }
+  .header-menu .menu .menu__list .menu__link:hover {
+    font-weight: 700;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s;
+    transform: scale(1.1);
+  }
   .header-menu .menu .menu__list .active-page {
     color: #F0145A;
   }
@@ -303,15 +312,6 @@ html {
   .header-menu .menu .menu__list .menu__link {
     font-size: 1rem;
   }
-  .header-menu .menu .menu__list .menu__link:hover {
-    font-weight: 700;
-    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s;
-    transform: scale(1.1);
-  }
 }
 @media screen and (min-width: 1024px) {
   .header-menu {
@@ -329,6 +329,8 @@ html {
   }
   .menu-btn:hover {
     cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.3s;
   }
 }
 @media screen and (min-width: 768px) {

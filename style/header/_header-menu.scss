@@ -29,6 +29,11 @@
                     display: block;
                     font-weight: 700;
                     color: $mainColorWhite;
+                    &:hover {
+                        @include title;
+                        transition: all .3s;
+                        transform: scale(1.1);
+                    }
                 }
                 .active-page {
                     color: $primaryColor;
@@ -63,11 +68,6 @@
                 padding: 0;
                 .menu__link {
                     font-size: 1rem;
-                    &:hover {
-                        @include title;
-                        transition: all .3s;
-                        transform: scale(1.1);
-                    }
                 }
             }
         }
