@@ -1,7 +1,7 @@
 // media 375px
 @media screen and (min-width: 375px) {
     .oriented {
-        padding: 30px;
+        padding: 30px 8%;
         .oriented__nav {
             display: flex;
             gap: 0 30px;
@@ -48,7 +48,7 @@
 // media 768px
 @media screen and (min-width: 768px) {
     .oriented {
-        padding: 60px;
+        padding: 60px 8%;
         .oriented__nav {
             padding-bottom: 60px;
             .oriented__list {
@@ -70,7 +70,7 @@
 @media screen and (min-width: 1024px) {
     .oriented {
         display: flex;
-        padding: 60px;
+        padding: 60px 6%;
         .oriented__nav {
             width: 49%;
             flex-direction: column;
@@ -95,7 +95,7 @@
 @media screen and (min-width: 1440px) {
     .oriented {
         align-items: center;
-        padding: 60px 180px;
+        padding: 60px 12%;
         .oriented__nav {
             width: 41%;
         }
@@ -109,7 +109,7 @@
 @media screen and (min-width: 1920px) {
     .oriented {
         align-items: center;
-        padding: 60px 280px;
+        padding: 60px 15%;
         .oriented__nav {
             width: 33%;
         }

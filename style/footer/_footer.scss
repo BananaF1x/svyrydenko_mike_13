@@ -2,7 +2,7 @@
 @media screen and (min-width: 375px) {
     .footer {
         background: #F5F5FA;
-        padding: 30px;
+        padding: 30px 8%;
         .footer-adress {
             .address-link {
                 display: block;
@@ -94,7 +94,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding: 30px 60px;
+        padding: 30px 8%;
         .footer-adress {
             width: 50%;
             display: flex;
@@ -144,7 +144,7 @@
 // media 1024px
 @media screen and (min-width: 1024px) {
     .footer {
-        padding: 0 60px 30px;
+        padding: 0 6% 30px;
     }
     .footer-pading {
         padding-top: 30px;
@@ -154,7 +154,7 @@
 // media 1920px
 @media screen and (min-width: 1920px) {
     .footer {
-        padding: 0 160px 30px;
+        padding: 0 8% 30px;
     }
     .footer-pading {
         padding-top: 30px;

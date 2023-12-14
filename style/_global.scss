@@ -45,20 +45,6 @@ html {
 	background-size: auto 100%;
 }
 
-.after-services {
-	.after {
-		margin: 0 auto;
-		width: 97%;
-		height: 10px;
-		background: $specialColor;
-		border-radius: 0 0 12px 12px;
-	}
-	.after--small {
-		max-width: 95%;
-		background: $specialColorMod;
-	}
-}
-
 .arrow-link {
 	display: flex;
 	align-items: center;
@@ -89,12 +75,26 @@ html {
 		align-items: center;
 		flex-wrap: wrap;
 	}
+
+	.after-services {
+		.after {
+			margin: 0 auto;
+			width: 97%;
+			height: 10px;
+			background: $specialColor;
+			border-radius: 0 0 12px 12px;
+		}
+		.after--small {
+			width: 95%;
+			background: $specialColorMod;
+		}
+	}
 }
 
 // media 768px
 @media screen and (min-width: 768px) {
 	.header {
-		padding: 50px 60px 0;
+		padding: 50px 8% 0;
 	}
 }
 
@@ -108,6 +108,6 @@ html {
 // media 1920px
 @media screen and (min-width: 1920px) {
 	.header {
-		padding: 50px 160px;
+		padding: 50px 8%;
 	}
 }

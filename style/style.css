@@ -41,18 +41,6 @@ html {
   background-size: auto 100%;
 }
 
-.after-services .after {
-  margin: 0 auto;
-  width: 97%;
-  height: 10px;
-  background: #CACADB;
-  border-radius: 0 0 12px 12px;
-}
-.after-services .after--small {
-  max-width: 95%;
-  background: #E7E7F2;
-}
-
 .arrow-link {
   display: flex;
   align-items: center;
@@ -82,10 +70,21 @@ html {
     align-items: center;
     flex-wrap: wrap;
   }
+  .after-services .after {
+    margin: 0 auto;
+    width: 97%;
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+  }
+  .after-services .after--small {
+    width: 95%;
+    background: #E7E7F2;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 50px 60px 0;
+    padding: 50px 8% 0;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -95,7 +94,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .header {
-    padding: 50px 160px;
+    padding: 50px 8%;
   }
 }
 @media screen and (min-width: 375px) {
@@ -104,7 +103,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 4%;
     background: rgba(245, 245, 250, 0.2);
   }
   .header-contacts .language-selection {
@@ -191,7 +190,7 @@ html {
     display: flex;
     align-items: center;
     gap: 0 4px;
-    padding: 15px 0 10px 15px;
+    padding: 15px 0 10px 4%;
   }
   .header-logo .header-logo__wrap {
     width: -moz-fit-content;
@@ -246,7 +245,7 @@ html {
     width: 80%;
     background: #686887;
     border-radius: 12px;
-    padding: 15px;
+    padding: 15px 4%;
     text-align: center;
   }
   .header-menu .menu .menu__exit-list {
@@ -322,7 +321,7 @@ html {
   .menu-btn {
     width: -moz-fit-content;
     width: fit-content;
-    padding: 15px 15px 10px 0;
+    padding: 15px 4% 10px 0;
   }
   .menu-btn .menu-btn__img {
     display: block;
@@ -386,7 +385,7 @@ html {
 }
 @media screen and (min-width: 375px) {
   .oriented {
-    padding: 30px;
+    padding: 30px 8%;
   }
   .oriented .oriented__nav {
     display: flex;
@@ -433,7 +432,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .oriented {
-    padding: 60px;
+    padding: 60px 8%;
   }
   .oriented .oriented__nav {
     padding-bottom: 60px;
@@ -449,7 +448,7 @@ html {
 @media screen and (min-width: 1024px) {
   .oriented {
     display: flex;
-    padding: 60px;
+    padding: 60px 6%;
   }
   .oriented .oriented__nav {
     width: 49%;
@@ -472,7 +471,7 @@ html {
 @media screen and (min-width: 1440px) {
   .oriented {
     align-items: center;
-    padding: 60px 180px;
+    padding: 60px 12%;
   }
   .oriented .oriented__nav {
     width: 41%;
@@ -484,7 +483,7 @@ html {
 @media screen and (min-width: 1920px) {
   .oriented {
     align-items: center;
-    padding: 60px 280px;
+    padding: 60px 15%;
   }
   .oriented .oriented__nav {
     width: 33%;
@@ -495,7 +494,7 @@ html {
 }
 @media screen and (min-width: 375px) {
   .services {
-    padding: 0 30px 60px;
+    padding: 0 8% 60px;
   }
   .services .services-wrapp .title {
     padding-top: 10px;
@@ -517,10 +516,10 @@ html {
     width: fit-content;
     border-radius: 24px;
     background-color: white;
-    padding: 14px;
+    padding: 14px 4%;
   }
   .services .services-container .services-container__block .services-container__img .services-container__icon--mod {
-    padding: 9px;
+    padding: 9px 2%;
   }
   .services .services-container .services-container__block .services-container__title {
     display: block;
@@ -540,7 +539,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .services {
-    padding: 0 60px 60px;
+    padding: 0 8% 60px;
   }
   .services .services-wrapp .title {
     padding-top: 60px;
@@ -563,12 +562,12 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .services {
-    padding: 0 160px 60px;
+    padding: 0 8% 60px;
   }
 }
 @media screen and (min-width: 375px) {
   .team {
-    padding: 0 30px;
+    padding: 0 8%;
   }
   .team .team__tabs {
     display: none;
@@ -588,7 +587,7 @@ html {
        object-fit: cover;
   }
   .team .team__tabs .team__text-container {
-    padding: 30px 30px 0;
+    padding: 30px 8% 0;
     background-color: #F5F5FA;
   }
   .team .team__tabs .team__text-container .team__primary-text {
@@ -643,7 +642,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .team {
-    padding: 60px;
+    padding: 60px 8%;
   }
   .team .team__tabs .team__text-container .team__primary-text {
     font-size: 2.375rem;
@@ -663,7 +662,7 @@ html {
   }
   .team .team__tabs .team__text-container {
     width: 55%;
-    padding: 30px;
+    padding: 30px 3%;
   }
   .team .team__tabs .team__text-container .team__primary-text--mod {
     padding: 6px 0 0;
@@ -682,7 +681,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .team {
-    padding: 60px 160px 0;
+    padding: 60px 8% 0;
   }
   .team .team__tabs .team__img-container {
     width: 25%;
@@ -775,7 +774,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .clients {
-    padding: 60px 100px 0;
+    padding: 60px 5% 0;
     margin-bottom: 60px;
   }
   .clients .clients__title {
@@ -788,7 +787,7 @@ html {
 }
 @media screen and (min-width: 375px) {
   .publications {
-    padding: 30px;
+    padding: 30px 8%;
     background: #F5F5FA;
   }
   .publications .publication__container .publication__title {
@@ -813,7 +812,7 @@ html {
   }
   .publications .publication__container .publication__item .publication__sub-title {
     display: block;
-    padding: 30px 30px 15px;
+    padding: 30px 8% 15px;
     font-weight: 700;
     color: #24A3FF;
   }
@@ -835,7 +834,7 @@ html {
   }
   .publications .publication__container .publication__item .publication__text {
     display: block;
-    padding: 15px 30px 0;
+    padding: 15px 8% 0;
     font-size: 0.875rem;
     line-height: 22px;
     color: black;
@@ -843,7 +842,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .publications {
-    padding: 30px 60px;
+    padding: 30px 8%;
   }
   .publications .publication__container .publication__title {
     padding-top: 10px;
@@ -882,12 +881,12 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .publications {
-    padding: 30px 160px;
+    padding: 30px 8%;
   }
 }
 @media screen and (min-width: 375px) {
   .intro {
-    padding: 30px;
+    padding: 30px 8%;
     text-align: center;
   }
   .intro::after {
@@ -901,7 +900,7 @@ html {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
-    padding: 14px;
+    padding: 14px 4%;
     background-color: white;
     border-radius: 24px;
   }
@@ -928,7 +927,7 @@ html {
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 12px;
-    padding: 18px 30px;
+    padding: 18px 8%;
     background-color: #24A3FF;
     color: white;
     font-weight: 700;
@@ -942,7 +941,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .intro {
-    padding: 60px;
+    padding: 60px 8%;
   }
   .intro::after {
     margin-top: 60px;
@@ -953,17 +952,17 @@ html {
 }
 @media screen and (min-width: 1440px) {
   .intro {
-    padding: 60px 180px;
+    padding: 60px 12%;
   }
 }
 @media screen and (min-width: 1920px) {
   .intro {
-    padding: 60px 280px;
+    padding: 60px 15%;
   }
 }
 @media screen and (min-width: 375px) {
   .services-in-this-area {
-    padding: 0 30px 60px;
+    padding: 0 8% 60px;
   }
   .services-in-this-area .services-in-this-area__title {
     padding-bottom: 30px;
@@ -996,7 +995,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .services-in-this-area {
-    padding: 0 60px 60px;
+    padding: 0 8% 60px;
   }
   .services-in-this-area .services-in-this-area__container {
     display: flex;
@@ -1011,12 +1010,12 @@ html {
 }
 @media screen and (min-width: 1440px) {
   .services-in-this-area {
-    padding: 0 180px 60px;
+    padding: 0 12% 60px;
   }
 }
 @media screen and (min-width: 1920px) {
   .services-in-this-area {
-    padding: 0 280px 60px;
+    padding: 0 15% 60px;
   }
 }
 @media screen and (min-width: 375px) {
@@ -1030,7 +1029,7 @@ html {
   .popup .popup__container {
     width: 100%;
     background-color: #F5F5FA;
-    padding: 30px;
+    padding: 30px 8%;
   }
   .popup .popup__container .popup__wrap {
     display: flex;
@@ -1059,7 +1058,7 @@ html {
     font-family: Montserrat;
     background-color: white;
     width: 100%;
-    padding: 15px;
+    padding: 15px 4%;
     border-radius: 8px;
     margin-top: 15px;
   }
@@ -1094,7 +1093,7 @@ html {
     width: 100%;
     margin-top: 30px;
     background-color: #24A3FF;
-    padding: 18px 30px;
+    padding: 18px 8%;
     border-radius: 12px;
     color: white;
     font-weight: 700;
@@ -1121,7 +1120,7 @@ html {
 @media screen and (min-width: 375px) {
   .footer {
     background: #F5F5FA;
-    padding: 30px;
+    padding: 30px 8%;
   }
   .footer .footer-adress .address-link {
     display: block;
@@ -1208,7 +1207,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 60px;
+    padding: 30px 8%;
   }
   .footer .footer-adress {
     width: 50%;
@@ -1255,7 +1254,7 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    padding: 0 60px 30px;
+    padding: 0 6% 30px;
   }
   .footer-pading {
     padding-top: 30px;
@@ -1263,7 +1262,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .footer {
-    padding: 0 160px 30px;
+    padding: 0 8% 30px;
   }
   .footer-pading {
     padding-top: 30px;

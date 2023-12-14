@@ -9,7 +9,7 @@
         .popup__container {
             width: 100%;
             background-color: #F5F5FA;
-            padding: 30px;
+            padding: 30px 8%;
             .popup__wrap {
                 display: flex;
                 gap: 0 6px;
@@ -34,7 +34,7 @@
                     font-family: Montserrat;
                     background-color: $mainColorWhite;
                     width: 100%;
-                    padding: 15px;
+                    padding: 15px 4%;
                     border-radius: 8px;
                     margin-top: 15px;
                     &::placeholder {
@@ -65,7 +65,7 @@
                 width: 100%;
                 margin-top: 30px;
                 background-color: $primaryColorMod;
-                padding: 18px 30px;
+                padding: 18px 8%;
                 border-radius: 12px;
                 color: $mainColorWhite;
                 font-weight: 700;

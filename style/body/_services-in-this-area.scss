@@ -1,7 +1,7 @@
 // media 375px
 @media screen and (min-width: 375px) {
     .services-in-this-area {
-        padding: 0 30px 60px;
+        padding: 0 8% 60px;
         .services-in-this-area__title {
             padding-bottom: 30px;
             font-weight: 700;
@@ -40,7 +40,7 @@
 // media 768px
 @media screen and (min-width: 768px) {
     .services-in-this-area {
-        padding: 0 60px 60px;
+        padding: 0 8% 60px;
         .services-in-this-area__container {
             display: flex;
             gap: 0 60px;
@@ -57,13 +57,13 @@
 // media 1440px
 @media screen and (min-width: 1440px) {
     .services-in-this-area {
-        padding: 0 180px 60px;
+        padding: 0 12% 60px;
     }
 }
 
 // media 1920px
 @media screen and (min-width: 1920px) {
     .services-in-this-area {
-        padding: 0 280px 60px;
+        padding: 0 15% 60px;
     }
 }
